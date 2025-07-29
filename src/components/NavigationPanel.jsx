@@ -37,22 +37,24 @@ const NavigationPanel = ({ questions, currentIdx, setCurrentIdx, answers, visite
                 })}
             </div>
 
-            <div className="mt-4 grid grid-cols-4 gap-2 text-xs">
-                <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 bg-gradient-to-r from-blue-500 to-indigo-600 rounded"></div>
-                    <span className="text-gray-600">Current</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 bg-gradient-to-r from-green-400 to-emerald-500 rounded"></div>
-                    <span className="text-gray-600">Answered</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 bg-yellow-100 border border-yellow-300 rounded"></div>
-                    <span className="text-gray-600">Visited</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 bg-gray-200 rounded border"></div>
-                    <span className="text-gray-600">Pending</span>
+            <div className="mt-4 w-full">
+                <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 text-sm">
+                    <div className="flex items-center gap-1">
+                        <div className="w-3 h-3 rounded bg-gradient-to-r from-blue-500 to-indigo-600">&nbsp;</div>
+                        <span className="text-gray-700">Current</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                        <div className="w-3 h-3 rounded bg-gradient-to-r from-green-400 to-emerald-500">&nbsp;</div>
+                        <span className="text-gray-700">Answered</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                        <div className="w-3 h-3 rounded bg-yellow-300 border border-yellow-400">&nbsp;</div>
+                        <span className="text-gray-700">Visited</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                        <div className="w-3 h-3 rounded bg-gray-300 border border-gray-400">&nbsp;</div>
+                        <span className="text-gray-700">Pending</span>
+                    </div>
                 </div>
             </div>
         </div>
