@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import StartPage from './components/StartPage';
 import QuizPage from './components/QuizPage';
-import './app.css';
+import './App.css';
 import ResultPage from './components/ResultPage';
 
 export default function App() {
