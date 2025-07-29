@@ -2,13 +2,14 @@ import { shuffle } from "./utils";
 let isFetching = false;
 
 export async function fetchQuestions() {
+    const API_URL = import.meta.env.VITE_API;
     if (isFetching) {
         console.warn("Fetch blocked to prevent duplicate requests");    
         return [];
     };
     isFetching = true;
     try {
-        const res = await fetch('https://opentdb.com/api.php?amount=15');
+        const res = await fetch(API_URL);
         const data = await res.json();
         return data.results.map(q => ({
             question: q.question,
