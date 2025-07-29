@@ -35,22 +35,22 @@ const ResultPage = ({ questions, answers }) => {
                         </h1>
                         <p className="text-gray-600 mb-6">Here's how you performed</p>
 
-                        <div className="flex justify-center items-center gap-8 mb-6">
-                            <div className="text-center">
-                                <div className="text-4xl font-bold text-blue-600">{score}</div>
+                        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 mb-6 text-center">
+                            <div>
+                                <div className="text-3xl sm:text-4xl font-bold text-blue-600">{score}</div>
                                 <div className="text-sm text-gray-600 font-semibold">Correct</div>
                             </div>
-                            <div className="text-3xl text-gray-400">/</div>
-                            <div className="text-center">
-                                <div className="text-4xl font-bold text-gray-800">{questions.length}</div>
+                            <div className="text-2xl sm:text-3xl text-gray-400">/</div>
+                            <div>
+                                <div className="text-3xl sm:text-4xl font-bold text-gray-800">{questions.length}</div>
                                 <div className="text-sm text-gray-600 font-semibold">Total</div>
                             </div>
-                            <div className="text-center">
-                                <div className="text-4xl font-bold text-green-600">{percentage}%</div>
+                            <div>
+                                <div className="text-3xl sm:text-4xl font-bold text-green-600">{percentage}%</div>
                                 <div className="text-sm text-gray-600 font-semibold">Score</div>
                             </div>
-                            <div className="text-center">
-                                <div className={`text-4xl font-bold ${gradeInfo.color}`}>{gradeInfo.grade}</div>
+                            <div>
+                                <div className={`text-3xl sm:text-4xl font-bold ${gradeInfo.color}`}>{gradeInfo.grade}</div>
                                 <div className="text-sm text-gray-600 font-semibold">Grade</div>
                             </div>
                         </div>
